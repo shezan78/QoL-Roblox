@@ -1,0 +1,43 @@
+{
+   "action": {
+   },
+   "author": "shritil8",
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "css/streamermode.css", "css/opacitythemefix.css", "css/payment.css", "css/roblox.css" ],
+      "js": [ "js/modules/hbaClient.js", "js/modules/getNavigatorLanguage.js", "js/authentication/main.js", "js/pages/document.js", "js/pages/paymentprompt.js", "js/pages/settings/settingsdropdown.js", "js/pages/generalfixes/injectscripts.js", "js/pages/generalfixes/hidedesktopbanner.js", "js/pages/generalfixes/hiderobloxads.js", "js/pages/generalfixes/disablefooter.js", "js/pages/generalfixes/addusdtorobux.js", "js/pages/generalfixes/resizablechatboxes.js", "js/pages/generalfixes/streamermode.js", "js/pages/feed/navfeedbutton.js", "js/pages/theme/customtheme.js", "js/pages/bestfriend/presencehelper.js" ],
+      "matches": [ "*://*.roblox.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "Multiple changes to the roblox site for a better user experience.",
+   "homepage_url": "https://www.roblox.com/my/account?tab=robloxqol#!/info",
+   "host_permissions": [ "*://*.roqol.io/", "*://*.roblox.com/", "*://*.rbxcdn.com/" ],
+   "icons": {
+      "128": "img/icons/icon128x128.png",
+      "48": "img/icons/icon48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgNDwwJaxL7GG5NFGlgOBHVOarh3+PywmjY2Cvhv7SCKTtbHA/PbY1L/BGXYFdx74Ev0v6Omymms0fldccPr9fQwKbu+fzboyFIG+jFUkrEDg7+72fhXnXc6mKsCUEQGXQyVwnw+fcnwrEy0pr++7eYypZch26VnnzT62OfeKNFM94a4460BB5GUGlD4KMyNMzMoY/FNWDdT6z2H1ydlY1b8m8z1Ib0V8mu0nr6GNTpejlpGaSs79qzsv6mmhgFVFDX3CgA60rWjLlr58uDMStKQpPEoRtOX4ErHzPQQZe4++pMjQ4xyRtxMHPS2CB4vMziGW3y+0OUAqdf8HVW6O9QIDAQAB",
+   "manifest_version": 3,
+   "name": "shezans extension",
+   "optional_host_permissions": [ "*://*.discord.com/" ],
+   "options_ui": {
+      "page": "html/options.html"
+   },
+   "permissions": [ "storage", "notifications", "cookies", "declarativeNetRequest", "tts", "scripting", "webRequest" ],
+   "short_name": "QoL",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.22.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.roblox.com/*", "https://web.roblox.com/*", "https://create.roblox.com/*" ],
+      "resources": [ "img/*", "html/*", "sounds/*", "css/*", "js/modules/*", "js/pages/serverfilters/getserverprops.js", "js/pages/quickserverinvite/checkforinvite.js", "js/pages/bestfriend/presence.js", "js/pages/bestfriend/inventory.js", "js/pages/trades/injecttrade.js", "js/pages/generalfixes/scriptinjections/*" ]
+   } ]
+}
