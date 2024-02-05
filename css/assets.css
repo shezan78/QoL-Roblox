@@ -1,0 +1,36 @@
+.asset-list {
+    right: 0px!important;
+    top: 0px!important;
+    position: absolute;
+    display: flex;
+}
+
+.asset-button {
+    position: relative!important;
+    list-style: none!important;
+    display: block!important;
+    width: 28px!important;
+    height: 28px!important;
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+    padding: 0px!important;
+}
+
+.rolimons-category-icon {
+    width: 24px!important;
+    margin-left: 15px!important;
+}
+
+.icon-tooltiptext {
+    margin-top: -5.5px;
+    margin-left: 3px;
+    pointer-events: none;
+    width: 130px;
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    z-index: 10;
+    padding-right: 8px;
+    padding-left: 8px;
+    width: auto;
+}

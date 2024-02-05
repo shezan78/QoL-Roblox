@@ -1,0 +1,52 @@
+.top-home-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.top-home-header .name {
+    margin-left: 20px;
+}
+
+.top-home-header .icon-premium {
+    margin-left: 12px;
+}
+
+.top-home-header .icon-verified-badge {
+    margin-left: 12px;
+}
+
+.top-home-header thumbnail-2d {
+    height: 100%;
+    width: 100%;
+}
+
+.top-home-header .thumbnail-2d-container {
+    height: 100%;
+    width: 100%;
+}
+
+.top-home-header .avatar-card-link {
+    height: 125px;
+    width: 125px;
+
+    border-radius: 50%;
+}
+
+.top-home-header .avatar-card-image {
+    border-radius: 50%;
+}
+
+.top-home-header .user-headshot {
+    background-color: #d4d4d4;
+}
+
+
+.roblox-usernames .people-list {
+    height: 160px;
+    max-height: 160px;
+}
+
+.roblox-usernames .people-list-container {
+    height: 217px;
+}
